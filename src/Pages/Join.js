@@ -24,7 +24,7 @@ function sendEmail(e) {
             <article className="join">
                 <h2 className="join__tittle">¡Estás a solo un paso!</h2>
                 <p className="join__subtittle">Una vez llenado el formulario contactaremos contigo lo antes posible para darte de alta como Chipsi punto</p>
-                <form onclick={sendEmail} action="" className="join__form">
+                <form onSubmit={sendEmail} action="" className="join__form">
                     <input className="join__form-input" required type="name" placeholder="Nombre del establecimiento" id="input__establecimiento" name="stablishment" />
                     <input className="join__form-input" required type="name" placeholder="Nombre del responsable" id="input__responsable" name="responsable"/>
                     <input className="join__form-input" required type="email" placeholder="Email" id="input__email" name="email"/>
