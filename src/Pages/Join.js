@@ -2,20 +2,21 @@ import Nav from "../Components/Nav.js";
 import { Link } from "react-router-dom";
 import "../Styles/join.scss";
 import Footer from "../Components/Footer.js";
+import emailjs from "emailjs"
 
 
 export default function Join() {
-    // function sendEmail(e) {
-    //     e.preventDefault();
+function sendEmail(e) {
+   e.preventDefault();
     
-    //     emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
-    //       .then((result) => {
-    //         console.log(result.text);
-    //       }, (error) => {
-    //         console.log(error.text);
-    //       });
-    //       e.target.reset();
-    //   }
+   emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
+     .then((result) => {
+       console.log(result.text);
+     }, (error) => {
+       console.log(error.text);
+     });
+     e.target.reset();
+ }
 
     return (
         <>
@@ -23,7 +24,7 @@ export default function Join() {
             <article className="join">
                 <h2 className="join__tittle">¡Estás a solo un paso!</h2>
                 <p className="join__subtittle">Una vez llenado el formulario contactaremos contigo lo antes posible para darte de alta como Chipsi punto</p>
-                <form action="" className="join__form">
+                <form onclick={sendEmail} action="" className="join__form">
                     <input className="join__form-input" required type="name" placeholder="Nombre del establecimiento" id="input__establecimiento" name="stablishment" />
                     <input className="join__form-input" required type="name" placeholder="Nombre del responsable" id="input__responsable" name="responsable"/>
                     <input className="join__form-input" required type="email" placeholder="Email" id="input__email" name="email"/>
