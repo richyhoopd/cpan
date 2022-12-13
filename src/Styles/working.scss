@@ -1,0 +1,47 @@
+@import "./var.scss";
+
+.working {
+    @extend %colCenter;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    &__img {
+        height: 12rem;
+    }
+
+    &__h2 {
+        @extend %tittle;
+        margin-bottom: 0.3rem;
+        text-align: center;
+    }
+
+    &__p {
+        @extend %p09;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &__link {
+        margin-top: 2rem;
+        @extend %p09;
+        @extend %transition;
+        border-radius: 999px;
+        text-decoration: none;
+        padding: 0.6rem 4rem;
+        background-color: $green-300;
+        font-weight: 500;
+        display: block;
+        border: none;
+        cursor: pointer;
+        outline: 2px solid transparent;
+    }
+
+    &__link:hover {
+        background-color: $green-200
+    }
+
+    &__link:focus {
+        outline: 2px solid $green-300;
+    }
+}

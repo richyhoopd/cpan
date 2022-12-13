@@ -1,0 +1,45 @@
+@import "./var.scss";
+@import "./home__comments.scss";
+@import "./home__main.scss";
+@import "./home__what.scss";
+@import "./home__how.scss";
+@import "./home__fqa.scss";
+
+.mipapa {
+    position: relative;
+    @extend %col;
+    row-gap: clamp(11rem, 15vw, 15rem);
+
+    .imagen__fondo {
+        position: absolute;
+        width: 86%;
+        object-fit: cover;
+        top: 2rem;
+        z-index: -9999;
+        height: 90%;
+    }
+}
+
+.mipapa2 {
+    position: relative;
+    @extend %col;
+    row-gap: clamp(11rem, 15vw, 15rem);
+    padding-top: 10rem;
+
+    .imagen__fondo2 {
+        position: absolute;
+        object-fit: cover;
+        bottom: 1rem;
+        z-index: -9999;
+        height: calc(100% - 13rem);
+        left: 50%;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1000px) {
+    .imagen__fondo,
+    .imagen__fondo2 {
+        display: none;
+    }
+}

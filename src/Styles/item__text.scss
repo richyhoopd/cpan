@@ -1,0 +1,29 @@
+@import "./var.scss";
+
+.item__text {
+    margin-top: 3rem;
+
+    h2 {
+        @extend %tittle2;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+        text-align: start;
+        text-transform: uppercase;
+        border-bottom: 1px solid #E9EAE9;
+    }
+
+    &__section {
+        margin-bottom: 3rem;
+        h3 {
+            @extend %p09;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            @extend %p08;
+            font-weight: 300;
+        }
+    }
+}

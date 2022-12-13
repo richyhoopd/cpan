@@ -1,0 +1,340 @@
+@import "./var.scss";
+
+.main {
+    @extend %col;
+    @extend %rowGap1;
+
+    &__container {
+        @extend %rowBetween;
+        @extend %colGap1;
+        flex-wrap: wrap;
+
+
+        &__text {
+            @extend %col;
+            @extend %rowGap1;
+            align-items: flex-start;
+            width: 60%;
+            flex-grow: 1;
+            justify-content: center;
+            padding: 1rem 0px;
+
+            &-caca {
+                font-weight: 600;
+                font-size: clamp(0.9rem, 2vw, 1.9rem);
+                text-align: start;
+                margin-bottom: -1rem;
+                ;
+
+                span {
+                    color: $green-300;
+                }
+            }
+
+            h1 {
+                font-size: clamp(2.2rem, 5vw, 5rem);
+                margin-bottom: clamp(0px, 1vw, 1rem);
+
+                span {
+                    color: $green-300;
+                    font-weight: 900;
+                }
+            }
+
+            p {
+                @extend %p09;
+                font-weight: 300;
+                margin-bottom: clamp(0.5rem, 1vw, 1rem);
+            }
+
+            a {
+                @extend %p09;
+                @extend %transition;
+                border-radius: 999px;
+                text-decoration: none;
+                padding: clamp(0.5rem, 1vw, 0.9rem) clamp(3rem, 4vw, 4rem);
+                background: radial-gradient(50% 50% at 50% 50%, rgba(229, 175, 237, 0.61) 0%, #8CE6E6 31.77%, #5BDCB7 100%);
+                background-size: 400% 400%;
+                animation: fondoboton infinite 5s linear;
+                font-weight: 500;
+                position: relative;
+                outline: 2px solid transparent;
+            }
+
+            a::before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                background-color: $green-300;
+                z-index: -1;
+                bottom: -30%;
+                left: -20%;
+                border-radius: 999px;
+                opacity: 0.8;
+                filter: blur(30px);
+            }
+
+            a:focus {
+                outline: 2px solid $green-200;
+            }
+        }
+
+        &__img {
+            width: 35%;
+            height: max-content;
+            min-width: 11rem;
+            flex-grow: 1;
+            z-index: -999;
+            @extend %rowCenter;
+
+            img {
+                width: 90%;
+                object-fit: cover
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main__container__img {
+        img {
+            max-width: 15rem;
+        }
+    }
+}
+
+.nav {
+    @extend %rowBetween;
+    display: none;
+    align-items: center;
+
+    &__logo {
+        height: clamp(2.4rem, 3vw, 3rem);
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__center {
+        @extend %row;
+        column-gap: 2rem;
+
+        a {
+            @extend %p06;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        .cagada {
+            color: $green-300;
+            font-weight: 400;
+        }
+    }
+
+    &__right {
+        @extend %row;
+        @extend %colGap1;
+
+        a {
+            @extend %p06;
+            @extend %transition;
+            border-radius: 999px;
+            text-decoration: none;
+            padding: 0.4rem 1.7rem;
+            position: relative;
+            outline: 2px solid transparent;
+        }
+
+        a:focus {
+            outline: 2px solid $green-200;
+        }
+
+        a:first-child {
+            background-color: $green-300;
+            font-weight: 400;
+        }
+
+        a:first-child::before {
+            width: calc(100% - 4px);
+            height: calc(100% - 3px);
+            background-color: #F5FAF9;
+            position: absolute;
+            content: "Iniciar sesión";
+            border-radius: 999px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            @extend %rowCenter;
+            align-items: center;
+            top: 0;
+            color: $general-text;
+        }
+
+        a:first-child:hover {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(229, 175, 237, 0.61) 0%, #8CE6E6 31.77%, #5BDCB7 100%);
+            background-size: 400% 400%;
+            animation: fondoboton infinite 5s linear;
+        }
+
+        a:last-child {
+            background-color: $green-300;
+            font-weight: 500;
+        }
+
+        a:last-child:hover {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(229, 175, 237, 0.61) 0%, #8CE6E6 31.77%, #5BDCB7 100%);
+            background-size: 400% 400%;
+            animation: fondoboton infinite 5s linear;
+        }
+    }
+}
+
+.nav__mobile {
+    @extend %rowBetween;
+    position: relative;
+    align-items: center;
+    width: 100vw;
+    margin-top: -1rem;
+    margin-left: clamp(-9rem, -9vw, -1rem);
+    padding: 0px clamp(1rem, 9vw, 9rem);
+    padding-top: 1rem;
+
+    input {
+        display: none;
+    }
+
+    input:checked ~ &__menu {
+        right: 0;
+    }
+
+    input:checked ~ &__menu:after {
+        display: block;
+    }
+
+    &__menu {
+        @extend %col;
+        @extend %transition2;
+        padding: 1rem;
+        height: $general-vh;
+        position: fixed;
+        background-color: $general-white;
+        max-width: 15rem;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        z-index: 999;
+
+        label {
+            margin-bottom: 1rem;
+            opacity: 0.8;
+
+            img {
+                height: 0.7rem;
+            }
+        }
+
+        &__buttons {
+            @extend %col;
+            @extend %rowGap1;
+            align-items: flex-start;
+            border-bottom: 1px solid #E9EAE9;
+            padding-bottom: 1rem;
+
+            a {
+                @extend %p08;
+                @extend %transition;
+                text-decoration: none;
+                background-color: $green-300;
+                padding: 0.5rem 1.3rem;
+                border-radius: 999px;
+                margin-left: 1rem;
+                position: relative;
+            }
+
+            a:focus {
+                outline: 2px solid $green-200;
+            }
+
+            a:first-child::before {
+                width: calc(100% - 4px);
+                height: calc(100% - 3px);
+                background-color: $general-white;
+                position: absolute;
+                content: "Iniciar sesión";
+                border-radius: 999px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                @extend %rowCenter;
+                align-items: center;
+                top: 0;
+                color: $general-text;
+            }
+
+            a:hover {
+                background: radial-gradient(50% 50% at 50% 50%, rgba(229, 175, 237, 0.61) 0%, #8CE6E6 31.77%, #5BDCB7 100%);
+                background-size: 400% 400%;
+                animation: fondoboton infinite 5s linear;
+            }
+        }
+        
+        &__links {
+            @extend %col;
+            @extend %rowGap1;
+            padding: 1rem 0px;
+
+            a {
+                @extend %p07;
+                text-decoration: none;
+                padding: 1rem;
+            }
+            .cagada {
+                color: $green-300;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__menu::after {
+        @extend %transition;
+        position: absolute;
+        width: 1000%;
+        height: 100%;
+        content: "";
+        background-color: black;
+        top: 0;
+        left: -1000%;
+        opacity: 0.05;
+        display: none;
+    }
+
+    &-button {
+        @extend %rowAlignCenter;
+        height: 1rem;
+        img {
+            height: 0.8rem;
+        }
+    }
+
+    &__logo {
+        height: 2.2rem;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .nav {
+        display: flex;
+    }
+
+    .nav__mobile {
+        display: none;
+    }
+}

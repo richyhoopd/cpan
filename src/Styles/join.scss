@@ -1,0 +1,141 @@
+@import "./var.scss";
+
+.join {
+    margin-top: 3rem;
+    
+    &__tittle {
+        @extend %tittle3;
+        text-align: start;
+        padding: 0px clamp(0px, 5vw, 10rem);
+        margin-top: 0;
+        font-weight: 400;
+        margin-bottom: 0.3rem;
+    }
+
+    &__subtittle {
+        @extend %p07;
+        text-align: start;
+        padding: 0px clamp(0px, 5vw, 10rem);
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        @extend %row;
+        @extend %gap1;
+        flex-wrap: wrap;
+        padding: 0px clamp(0px, 5vw, 10rem);
+
+        &-input {
+            @extend %transition;
+            @extend %p07;
+            border-radius: 5px;
+            outline: 2px solid transparent; 
+            padding: clamp(0.8rem, 1vw, 1rem) clamp(0.8rem, 1.5vw, 1.5rem);
+            flex-grow: 1;
+            border: none;
+        }
+
+        &-input:focus {
+            outline: 2px solid $green-200;
+        }
+
+        &-terms,
+        &-button {
+            width: 100%;
+        }
+
+        &-button {
+            button {
+                @extend %p09;
+                @extend %transition;
+                border-radius: 999px;
+                text-decoration: none;
+                padding: 0.6rem 4rem;
+                background-color: $green-300;
+                font-weight: 500;
+                display: block;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                outline: 2px solid transparent;
+            }
+
+            button::before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                background-color: $green-300;
+                z-index: -1;
+                bottom: -30%;
+                left: -20%;
+                border-radius: 999px;
+                opacity: 0.8;
+                filter: blur(30px);
+            }
+
+            button:hover {
+                background-color: $green-200
+            }
+
+            button:focus {
+                outline: 2px solid $green-300;
+            }
+        }
+
+        &-terms {
+            @extend %row;
+            column-gap: 0.5rem;
+            margin: 1rem 0px;
+
+            label {
+                @extend %p07;
+                user-select: none;
+
+                a {
+                    color: $green-300;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        #input__establecimiento,
+        #input__responsable,
+        #input__colonia,
+        #input__ciudad,
+        #input__calle {
+            width: 40%;
+            min-width: 200px;
+        }
+
+        #input__email {
+            width: 60%;
+            min-width: 200px;
+        }
+
+        #input__telefono {
+            width: 25%;
+            min-width: 100px;
+        }
+        
+        #input__postal {
+            width: 15%;
+            min-width: 100px;
+        }
+
+        #input__num {
+            width: 30%;
+            min-width: 150px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .join {
+        &__form,
+        &__tittle,
+        &__subtittle {
+            padding: 0px !important;
+        }
+    }
+}
