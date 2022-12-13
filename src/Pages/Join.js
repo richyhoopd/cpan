@@ -2,7 +2,7 @@ import Nav from "../Components/Nav.js";
 import { Link } from "react-router-dom";
 import "../Styles/join.scss";
 import Footer from "../Components/Footer.js";
-import emailjs from "emailjs"
+import emailjs from '@emailjs/browser';
 
 
 export default function Join() {
