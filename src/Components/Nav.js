@@ -32,11 +32,12 @@ export default function Nav() {
                         }>
                         Quiero unirme
                     </NavLink>
+                    
                 </div>
                 <div className="nav__right">
-                    <Link to="/working">
-                        Iniciar sesión
-                    </Link>
+                    <a href="https://www.chipsi.mx">
+                        Ir a Chipsi.mx
+                    </a>
                     <Link to="/join">
                         Unirme
                     </Link>
