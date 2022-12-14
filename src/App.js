@@ -12,6 +12,7 @@ import Cookies from "./Pages/Cookies.js";
 import Privacidad from "./Pages/Privacidad.js";
 import Garantia from "./Pages/Garantia.js";
 import PoliticaChipsiPuntos from "./Pages/PoliticaChipsiPuntos.js";
+import Thanks from "./Pages/Thanks.js";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/privacidad" element={<Privacidad />} />
         <Route path="/garantia" element={<Garantia />} />
+        <Route path="/gracias/:name" element={<Thanks />} />
         <Route path="/politica-chipsipuntos" element={<PoliticaChipsiPuntos />} />
         <Route path="*" element={<Error404 />} />
       </Routes>

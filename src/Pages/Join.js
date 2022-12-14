@@ -1,21 +1,36 @@
 import Nav from "../Components/Nav.js";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Styles/join.scss";
 import Footer from "../Components/Footer.js";
 import emailjs from '@emailjs/browser';
+import React, { useState } from "react";
 
 
 export default function Join() {
+
+    const [email, setEmail] = useState("");
+    const navigate = useNavigate();
+
 function sendEmail(e) {
    e.preventDefault();
-    
-   emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
-     .then((result) => {
-       console.log(result.text);
-     }, (error) => {
-       console.log(error.text);
-     });
-     e.target.reset();
+   if (email !== "") {
+    emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+    e.target.reset();
+    let today = new Date();
+      let date =
+        today.getFullYear() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-" +
+        today.getDate();
+      navigate(`/gracias/${email}`, date);
+   } 
+   
  }
 
     return (
@@ -27,7 +42,7 @@ function sendEmail(e) {
                 <form onSubmit={sendEmail} action="" className="join__form">
                     <input className="join__form-input" required type="name" placeholder="Nombre del establecimiento" id="input__establecimiento" name="stablishment" />
                     <input className="join__form-input" required type="name" placeholder="Nombre del responsable" id="input__responsable" name="responsable"/>
-                    <input className="join__form-input" required type="email" placeholder="Email" id="input__email" name="email"/>
+                    <input className="join__form-input" required type="email" placeholder="Email" id="input__email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <input className="join__form-input" required type="number" placeholder="Teléfono/Móvil" id="input__telefono" name="pnumber"/>
                     <input className="join__form-input" required type="postal" placeholder="Código postal" id="input__postal" name="pc"/>
                     <input className="join__form-input" required type="street-address" placeholder="Dirección" id="input__calle" name="adress"/>
