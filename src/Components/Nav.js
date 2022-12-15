@@ -35,8 +35,8 @@ export default function Nav() {
                     
                 </div>
                 <div className="nav__right">
-                    <a href="https://www.chipsi.mx">
-                        Ir a Chipsi.mx
+                <a href="https://api.whatsapp.com/send?phone=5213339485139&text=%C2%A1Hola!%20Quisiera%20saber%20m%C3%A1s%20acerca%20de%20los%20Chipsi%20Puntos%20" target="_blank" rel="noopener noreferrer">
+                        Contactanos
                     </a>
                     <Link to="/join">
                         Unirme
@@ -56,9 +56,9 @@ export default function Nav() {
                         <img src={ImgX} alt="" />
                     </label>
                     <div className="nav__mobile__menu__buttons">
-                        <Link to="/working">
-                            Iniciar sesión
-                        </Link>
+                    <a href="https://api.whatsapp.com/send?phone=5213339485139&text=%C2%A1Hola!%20Quisiera%20saber%20m%C3%A1s%20acerca%20de%20los%20Chipsi%20Puntos%20" target="_blank" rel="noopener noreferrer">
+                            Contactanos
+                        </a>
                         <Link to="/join">
                             Unirme
                         </Link>

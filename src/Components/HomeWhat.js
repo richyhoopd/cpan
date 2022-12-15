@@ -1,4 +1,4 @@
-import ImgCaja from "../Assets/ImgCaja.svg";
+import ImgCaja from "../Assets/ImgCaja.png";
 import ImgFlujo from "../Assets/ImgFlujo.svg";
 import { Link } from "react-router-dom";
 import "../Styles/home__what.scss";

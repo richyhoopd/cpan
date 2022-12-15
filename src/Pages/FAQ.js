@@ -16,7 +16,7 @@ export default function FAQ() {
                     <input type="checkbox" id="faq__input1" />
                     <label htmlFor="faq__input1" className="faq__q-tittle">
                         <img src={ImgArrow} alt="" />
-                        <h3>¿Qué son?</h3>
+                        <h3>&#191;Qué son?</h3>
                     </label>
                     <label htmlFor="faq__input1" className="faq__q-text">
                         <p>

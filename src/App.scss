@@ -1,7 +1,8 @@
 @import "./Styles/var.scss";
 
 * {
-  font-family: "OutfitVar";
+  font-family: "OutfitVar", Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

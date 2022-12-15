@@ -15,13 +15,13 @@ export default function Footer() {
                     <a href="https://www.facebook.com/cheapc.mx" target="_blank" rel="noopener noreferrer">
                         <img src={ImgFacebook} alt="" />
                     </a>
-                    <a href="https://twitter.com/Cheapc__" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/Chipsi_mx" target="_blank" rel="noopener noreferrer">
                         <img src={ImgTwitter} alt="" />
                     </a>
-                    <a href="https://www.instagram.com/cheapc._/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/chipsi._/" target="_blank" rel="noopener noreferrer">
                         <img src={ImgInstagram} alt="" />
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=5213339485139&text=%C2%A1Hola!%20Quisiera%20saber%20m%C3%A1s%20acerca%20de%20como%20reparar%20con%20chipsi." target="_blank" rel="noopener noreferrer">
+                    <a href="https://api.whatsapp.com/send?phone=5213339485139&text=%C2%A1Hola!%20Quisiera%20saber%20m%C3%A1s%20acerca%20de%20los%20Chipsi%20Puntos%20" target="_blank" rel="noopener noreferrer">
                         <img src={ImgWhatsapp} alt="" />
                     </a>
                 </div>

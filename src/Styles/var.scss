@@ -1,63 +1,68 @@
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-Black.woff2") format("woff2"),
-    url("../Fonts/Outfit-Black.woff") format("woff");
+  src: url("../Fonts/Outfit-Black.woff") format("woff"),
+    url("../Fonts/Outfit-Black.woff2") format("woff2");
   font-weight: 900;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-ExtraBold.woff2") format("woff2"),
-    url("../Fonts/Outfit-ExtraBold.woff") format("woff");
+  src: url("../Fonts/Outfit-ExtraBold.woff") format("woff"),
+    url("../Fonts/Outfit-ExtraBold.woff2") format("woff2");
   font-weight: 800;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-Bold.woff2") format("woff2"),
-    url("../Fonts/Outfit-Bold.woff") format("woff");
+  src: url("../Fonts/Outfit-Bold.woff") format("woff"),
+    url("../Fonts/Outfit-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-SemiBold.woff2") format("woff2"),
-    url("../Fonts/Outfit-SemiBold.woff") format("woff");
+  src: url("../Fonts/Outfit-SemiBold.woff") format("woff"),
+  url("../Fonts/Outfit-SemiBold.woff2") format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-Medium.woff2") format("woff2"),
-    url("../Fonts/Outfit-Medium.woff") format("woff");
+  src:
+    url("../Fonts/Outfit-Medium.woff") format("woff"),
+    url("../Fonts/Outfit-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-Regular.woff2") format("woff2"),
-    url("../Fonts/Outfit-Regular.woff") format("woff");
+  src:
+    url("../Fonts/Outfit-Regular.woff") format("woff"),
+    url("../Fonts/Outfit-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-Light.woff2") format("woff2"),
-    url("../Fonts/Outfit-Light.woff") format("woff");
+  src:
+    url("../Fonts/Outfit-Light.woff") format("woff"),
+    url("../Fonts/Outfit-Light.woff2") format("woff2");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-ExtraLight.woff2") format("woff2"),
-    url("../Fonts/Outfit-ExtraLight.woff") format("woff");
+  src:
+    url("../Fonts/Outfit-ExtraLight.woff") format("woff"),
+    url("../Fonts/Outfit-ExtraLight.woff2") format("woff2");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "OutfitVar";
-  src: url("../Fonts/Outfit-Thin.woff2") format("woff2"),
-    url("../Fonts/Outfit-Thin.woff") format("woff");
+  src: 
+    url("../Fonts/Outfit-Thin.woff") format("woff"),
+    url("../Fonts/Outfit-Thin.woff2") format("woff2");
   font-weight: 100;
 }
 
@@ -114,15 +119,15 @@ $general-vh: calc(var(--vh, 1vh) * 100);
 
 @keyframes fondoboton {
   0% {
-      background-position: 0% 20%;
+    background-position: 0% 20%;
   }
 
   50% {
-      background-position: 100% 80%;
+    background-position: 100% 80%;
   }
 
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
