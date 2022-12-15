@@ -2,8 +2,8 @@ import Nav from "../Components/Nav.js";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/join.scss";
 import Footer from "../Components/Footer.js";
-import emailjs from '@emailjs/browser';
 import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 
 
 
@@ -18,10 +18,18 @@ export default function Join() {
         // Send the email using emailjs
         emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
           .then((result) => {
+            emailjs.sendForm('service_5armqqh', 'template_xpjat5s', e.target, 'SvWGY6TRfPPNmlBEC')
+              .then((result) => {
+                console.log(result.text);
+                console.log(email)
+              }, (error) => {
+                console.log(error.text);
+              });
             console.log(result.text);
           }, (error) => {
             console.log(error.text);
           });
+         
         e.target.reset();
         let today = new Date();
         let date =
