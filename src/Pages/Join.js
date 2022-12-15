@@ -6,32 +6,35 @@ import emailjs from '@emailjs/browser';
 import React, { useState } from "react";
 
 
+
 export default function Join() {
 
     const [email, setEmail] = useState("");
     const navigate = useNavigate();
+    
+    function sendEmail(e) {
+      e.preventDefault();
+      if (email !== "") {
+        // Send the email using emailjs
+        emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+        e.target.reset();
+        let today = new Date();
+        let date =
+          today.getFullYear() +
+          "-" +
+          (today.getMonth() + 1) +
+          "-" +
+          today.getDate();
+        navigate(`/gracias/${email}`, date);
+    }
+    }
+    
 
-function sendEmail(e) {
-   e.preventDefault();
-   if (email !== "") {
-    emailjs.sendForm('service_w4vq21h', 'template_6ls1agd', e.target, 'xmdMFjwSqkjIssZKN')
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
-    e.target.reset();
-    let today = new Date();
-      let date =
-        today.getFullYear() +
-        "-" +
-        (today.getMonth() + 1) +
-        "-" +
-        today.getDate();
-      navigate(`/gracias/${email}`, date);
-   } 
-   
- }
 
     return (
         <>
