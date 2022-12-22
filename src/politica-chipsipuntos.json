@@ -1,5 +1,22 @@
 [
   {
+    "tittle": "Resumen de las politicas",
+    "text": [
+      [
+        "Los Chipsi Spots son puntos de recolección de dispositivos electrónicos, como teléfonos móviles, en los que los usuarios pueden dejar sus dispositivos para su reparación o mantenimiento. Al dejar su dispositivo en un Chipsi Spot, el usuario acepta los Términos y Condiciones de la empresa, incluyendo que es el único responsable de los datos personales proporcionados al momento del registro y del uso y resguardo de su contraseña. Además, el usuario se compromete a pagar cualquier tarifa por el uso de los servicios de Chipsi. Sólo pueden usar los servicios de Chipsi las personas mayores de edad con capacidad legal para contratar, y las personas que usen la plataforma en representación de una empresa deben tener capacidad para contratar a nombre de ella."
+      ],
+      [
+        "Los Chipsi Spots son operados por terceros y Chipsi no es responsable de cualquier problema o daño causado por el mal manejo o el uso inadecuado del punto por parte del usuario o del tendero. Si el usuario deja su dispositivo en un Chipsi Spot, se le entregará un voucher por parte del tendero como comprobante de recepción del dispositivo. Si el tendero no entrega el voucher, es responsabilidad del usuario solicitarlo y exigirlo. Además, se recomienda programar la entrega del dispositivo a través de la web de Chipsi para garantizar una mayor seguridad y atención al dispositivo."
+      ],
+      [
+        "Una vez que el dispositivo entra en manos de los repartidores certificados de Chipsi, la empresa asume las responsabilidades de transporte, reparación, traslado y cuidado del equipo. Chipsi se compromete a reparar todos los problemas especificados por el cliente y a comunicar cualquier problema adicional encontrado durante el proceso de diagnóstico. Si el problema diagnosticado no es el correcto, Chipsi se comunicará con el cliente para informarle de los problemas adicionales encontrados y proporcionarle un presupuesto para su reparación."
+      ],
+      [
+        "En caso de un siniestro con el dispositivo, como un robo o un asalto, Chipsi hace responsable al Chipsi Spot y al encargado del punto por los daños y la reparación del dispositivo. Si el dispositivo sufre daños durante el transporte o la reparación, Chipsi se hará cargo de la reparación o el reemplazo del dispositivo. Si el cliente no está satisfecho con la reparación realizada, puede solicitar un reembolso por los servicios no utilizados. "
+      ]
+    ]
+  },
+  {
     "tittle": "Garantías de Chipsi Puntos",
     "text": [
       [
@@ -94,6 +111,18 @@
       ],
       [
         "19. Chipsi puede modificar, borrar, aumentar o disminuir las tarifas de productos y servicios en cualquier momento y sin previo aviso."
+      ],
+      [
+        "20. Chipsi puede modificar, borrar, aumentar o disminuir las tarifas de productos y servicios en cualquier momento y sin previo aviso."
+      ],
+      [
+        "21. Si el usuario se equivoca al momento de detallar el modelo exacto de su dispositivo, Chipsi no se hace responsable de cualquier error en la reparación o en el proceso de diagnóstico. En este caso, Chipsi se pondrá en contacto con el usuario para informarle de la situación y proporcionarle un presupuesto para la reparación del dispositivo correcto. "
+      ],
+      [
+        "22. Si el dispositivo presenta problemas adicionales que afectan a la reparación del problema inicial reportado por el usuario, Chipsi se pondrá en contacto con el usuario para informarle de los problemas adicionales encontrados y proporcionarle un presupuesto para su reparación. Si el usuario acepta el presupuesto, Chipsi procederá a reparar el dispositivo y facturará al usuario por los servicios adicionales realizados."
+      ],
+      [
+        "23. Si el problema reportado por el usuario no es realmente el problema que presenta el dispositivo, Chipsi se pondrá en contacto con el usuario para informarle de los problemas reales encontrados y proporcionarle un presupuesto para su reparación. Si el usuario acepta el presupuesto, Chipsi procederá a reparar el dispositivo y facturará al usuario por los servicios adicionales realizados. Si el usuario no está satisfecho con la reparación realizada, puede solicitar un reembolso por los servicios no utilizados."
       ]
     ]
   }
