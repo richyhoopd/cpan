@@ -9,7 +9,7 @@ export default function HomeMain() {
             <Nav />
             <div className="main__container">
                 <div className="main__container__text">
-                    <span className="main__container__text-caca">GANA DINERO OFRECIENDO A <span>TUS CLIENTES</span></span>
+                    <span className="main__container__text-caca">OFRECE A <span>TUS CLIENTES</span></span>
                     <h1>
                         REPARACIONES
                         <br />
